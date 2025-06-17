@@ -14,6 +14,21 @@
       document.body.classList.toggle('dark-mode');
     }
   </script>
+<style>
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  .delay-1 { animation-delay: 0.3s; }
+  .delay-2 { animation-delay: 0.6s; }
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
 </head>
 <body>
   <button class="theme-toggle" onclick="toggleTheme()">🌓 Toggle Theme</button>
@@ -32,13 +47,10 @@
     </aside>
     <main class="main">
       <section id="about">
-        <h2>👤 About</h2>
- <p>
-    I am a PhD student at Inria and Grenoble INP, researching **“Efficient task hybridization in heterogeneous computing:
-    practical combinations of Control and Scheduling theories.”** Started November 2023, co-advised by Raphaël Bleuse,  
-    Eric Rutten & Bogdan Robu. My work is part of the CTRL‑A project, aiming to build safe, adaptive controllers
-    for cloud/HPC resource management :contentReference[oaicite:1]{index=1}.
-  </p>      </section>
+  <h2 class="fade-in">👤 About</h2>
+  <p class="fade-in delay-1">I am a PhD student at Inria and Grenoble INP, researching <strong>“Efficient task hybridization in heterogeneous computing: practical combinations of Control and Scheduling theories.”</strong> My work is part of the CTRL‑A project and aims to design adaptive control strategies for dynamic cloud and HPC environments.</p>
+  <p class="fade-in delay-2">Previously, I completed an MSc internship at Inria's Spirals team, focusing on control-theoretic optimization for compute-intensive systems. I hold an engineering degree from the National Polytechnic School of Algiers and currently live in Grenoble, France, where I combine control systems, smart automation, and large-scale computing research.</p>
+</section>
 
       <section id="publications">
         <h2>📚 Publications</h2>
@@ -64,9 +76,9 @@
             <a href="https://cv.hal.science/raphael-bleuse" target="_blank">🔗 View on HAL</a>
           </li>
           <li>
-            <strong>"Poster: Control-Scheduling for HPC"</strong><br />
+            <strong>"Poster: Hybrid Control-Scheduling for HPC"</strong><br />
             <span><em>Inria / HAL Poster Archive</em>, 2024</span><br />
-            <a href="https://hal.science/hal-05108245v1" target="_blank">🔗 View Poster</a>
+            <a href="https://hal.science/hal-XXXXX" target="_blank">🔗 View Poster</a>
           </li>
         </ul>
       </section>
