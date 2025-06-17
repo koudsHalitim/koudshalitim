@@ -92,7 +92,7 @@ body {
 .main {
   flex: 1;
   padding: 0.5rem 2rem;
-  margin-left: 150px;
+  margin-left: 350px;
   background-color: #fff;
   min-height: auto;
 }
