@@ -7,25 +7,59 @@
   <meta name="description" content="This is the portfolio of Kouds Halitim" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .container {
-      display: flex;
-      flex-direction: row;
-      max-width: 1200px;
-      margin: auto;
-      padding: 2rem;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      min-height: 100vh;
     }
     .sidebar {
-      flex: 1;
-      max-width: 250px;
-      padding-right: 2rem;
+      background-color: #f8f8f8;
+      padding: 2rem 1rem;
       text-align: center;
+      border-right: 1px solid #ddd;
     }
     .sidebar img {
       width: 100%;
-      border-radius: 10px;
+      max-width: 200px;
+      border-radius: 8px;
+      margin-bottom: 1rem;
     }
-    .content {
-      flex: 3;
+    .sidebar nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar nav ul li {
+      margin: 0.5rem 0;
+    }
+    .sidebar nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    .main {
+      padding: 2rem;
+    }
+    .theme-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+    .dark-mode .sidebar {
+      background-color: #1e1e1e;
+      border-right: 1px solid #333;
+    }
+    .dark-mode a {
+      color: #90caf9;
     }
   </style>
   <script>
@@ -37,14 +71,20 @@
 </head>
 <body>
   <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
-  <div class="container">
+  <div class="layout">
     <aside class="sidebar">
       <img src="https://github.com/koudsHalitim/koudshalitim/blob/showing-/88205726.jpeg" alt="Kouds Halitim" />
       <h1>Kouds Halitim</h1>
       <p><em>Automation Engineer</em></p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </aside>
-
-    <main class="content">
+    <main class="main">
       <section id="about">
         <h2>About</h2>
         <p>I am a researcher specializing in automation engineering, with a focus on control systems, robotics, and industrial process optimization. My work blends hands-on engineering with research into efficient and scalable automation technologies.</p>
@@ -74,8 +114,7 @@
       </section>
     </main>
   </div>
-
-  <footer>
+  <footer style="text-align:center; padding: 1rem; font-size: 0.9rem;">
     <p>&copy; 2025 Kouds Halitim. All rights reserved.</p>
   </footer>
 </body>
