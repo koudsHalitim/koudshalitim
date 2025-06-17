@@ -1,4 +1,11 @@
 /* ===== Base Setup ===== */
+body.dark-mode .sidebar nav ul li a {
+  color: #f0f0f0;
+}
+
+body.dark-mode .sidebar nav ul li a:hover {
+  color: #ffc267;
+}
 :root {
   --bg-light: #fffef9;
   --bg-dark: #1a1a1a;
