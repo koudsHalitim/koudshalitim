@@ -5,121 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kouds Halitim | Automation Engineer</title>
   <meta name="description" content="This is the portfolio of Kouds Halitim" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fffef9;
-      color: #2e2e2e;
-    }
-    .layout {
-      display: flex;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-    .sidebar {
-      background: linear-gradient(180deg, #fdd76e, #fff4c2);
-      color: #1a1a1a;
-      width: 320px;
-      padding: 3rem 2rem;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-shadow: 2px 0 20px rgba(0, 0, 0, 0.05);
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      overflow-y: auto;
-    }
-    .sidebar img {
-      width: 220px;
-      height: 220px;
-      border-radius: 20px;
-      object-fit: cover;
-      margin-bottom: 1.8rem;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-    .sidebar h1 {
-      font-size: 2rem;
-      margin: 0.4rem 0;
-    }
-    .sidebar p {
-      font-size: 1rem;
-      font-style: italic;
-      margin-bottom: 2rem;
-    }
-    .sidebar nav ul {
-      list-style: none;
-      padding: 0;
-      width: 100%;
-    }
-    .sidebar nav ul li {
-      margin: 1rem 0;
-    }
-    .sidebar nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-    .sidebar nav ul li a:hover {
-      color: #a65f00;
-    }
-    .main {
-      flex: 1;
-      padding: 4rem 5rem;
-      margin-left: 320px;
-      background-color: #fff;
-    }
-    h2 {
-      font-size: 1.6rem;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-      color: #a65f00;
-      border-left: 4px solid #f0b134;
-      padding-left: 1rem;
-    }
-    ul.publications {
-      padding-left: 1.2rem;
-    }
-    ul.publications li {
-      margin-bottom: 2rem;
-      line-height: 1.6;
-    }
-    a {
-      color: #a65f00;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .theme-toggle {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      padding: 0.6rem 1.2rem;
-      background-color: #a65f00;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-weight: 600;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #fff7df;
-      font-size: 0.9rem;
-      border-top: 1px solid #f0e4b4;
-    }
-  </style>
+  <link rel="stylesheet" href="css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script>
     function toggleTheme() {
       document.body.classList.toggle('dark-mode');
@@ -127,12 +16,12 @@
   </script>
 </head>
 <body>
-  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+  <button class="theme-toggle" onclick="toggleTheme()">🌓 Toggle Theme</button>
   <div class="layout">
     <aside class="sidebar">
-      <img src="88205726.jpeg" alt="Kouds Halitim" />
+      <img src="88205726.jpeg" alt="Kouds Halitim" class="profile-pic" />
       <h1>Kouds Halitim</h1>
-      <p>Automation Engineer<br/>Based in Grenoble, France</p>
+      <p class="tagline">Automation Engineer<br/>Grenoble, France</p>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -143,36 +32,33 @@
     </aside>
     <main class="main">
       <section id="about">
-        <h2>About</h2>
-        <p>I am a final-year automation engineering student at the National Polytechnic School of Algiers, currently living in Grenoble, France. I specialize in control systems, robotics, and industrial process optimization. As an ambassador for the International Youth Math Challenge (IYMC), I also promote mathematical innovation among youth. My recent work includes an MSc internship at INRIA on control theory applied to compute-intensive applications.</p>
+        <h2>👤 About</h2>
+        <p>I am a final-year automation engineering student at the National Polytechnic School of Algiers, currently residing in Grenoble, France. My work focuses on control systems, robotics, and intelligent automation. Recently, I completed an MSc internship at INRIA, applying control theory to improve performance in compute-intensive environments.</p>
       </section>
 
       <section id="publications">
-        <h2>Publications</h2>
+        <h2>📚 Publications</h2>
         <ul class="publications">
           <li>
             <strong>"Control‑Theory‑Based Energy Optimization in HPC Workloads"</strong><br />
-            <span>Kouds Halitim et al., <em>CTRL‑A Project, Inria Spirals</em>, 2024.</span><br />
-            <a href="https://hal.science/hal-XXXX" target="_blank">View on HAL</a>
-          </li>
-          <li>
-            <strong>"Ambassadorial Report for IYMC"</strong><br />
-            <span>Kouds Halitim, <em>IYMC Youth Math Outreach</em>, 2024.</span><br />
-            <a href="https://iymc.info/ambassadors" target="_blank">IYMC Ambassador Page</a>
+            <span><em>CTRL‑A Project, Inria Spirals</em>, 2024</span><br />
+            <a href="https://hal.science/hal-XXXX" target="_blank">🔗 View on HAL</a>
           </li>
         </ul>
       </section>
 
       <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:kouds@email.com">kouds@email.com</a></p>
-        <p>GitHub: <a href="https://github.com/koudsHalitim" target="_blank">github.com/koudsHalitim</a></p>
-        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=XXXX" target="_blank">View Profile</a></p>
+        <h2>📬 Contact</h2>
+        <ul class="contact-info">
+          <li><strong>Email:</strong> <a href="mailto:kouds@email.com">kouds@email.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/koudsHalitim" target="_blank">github.com/koudsHalitim</a></li>
+          <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=XXXX" target="_blank">View Profile</a></li>
+        </ul>
       </section>
     </main>
   </div>
   <footer>
-    <p>&copy; 2025 Kouds Halitim. All rights reserved.</p>
+    <p>&copy; 2025 Kouds Halitim. Built with HTML & CSS. All rights reserved.</p>
   </footer>
 </body>
 </html>
