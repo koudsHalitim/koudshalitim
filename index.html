@@ -1,68 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title> Kouds Halitim | Automation engineer </title>
-    <meta name="description" content="This is the portfolio of Kouds Halitim"/>
-    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="css.css" />
-    <script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kouds Halitim | Automation Engineer</title>
+  <meta name="description" content="This is the portfolio of Kouds Halitim" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #222;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      min-height: 100vh;
+    }
+    .sidebar {
+      background-color: #f4f4f4;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-right: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .sidebar img {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    .sidebar h1 {
+      margin-bottom: 0.25rem;
+    }
+    .sidebar nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 2rem;
+    }
+    .sidebar nav ul li {
+      margin: 0.75rem 0;
+    }
+    .sidebar nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .main {
+      padding: 2rem 3rem;
+      max-width: 900px;
+    }
+    h2 {
+      margin-top: 2rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    ul.publications {
+      padding-left: 1rem;
+    }
+    ul.publications li {
+      margin-bottom: 1.25rem;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      background-color: #ddd;
+      border: none;
+      border-radius: 5px;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
+    .dark-mode .sidebar {
+      background-color: #1e1e1e;
+      border-right: 1px solid #333;
+    }
+    .dark-mode a {
+      color: #90caf9;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #f4f4f4;
+      border-top: 1px solid #ddd;
+    }
+    .dark-mode footer {
+      background-color: #1e1e1e;
+      border-top: 1px solid #333;
+    }
+  </style>
+  <script>
     function toggleTheme() {
       document.body.classList.toggle('dark-mode');
     }
   </script>
-    <html class="js" lang="en"> 
-    <!-- add icon link --> 
-        <link rel = "icon" href ="https://icons.veryicon.com/png/o/education-technology/blue-gray-solid-blend-icon/electronics-187.png" type = "image/x-icon">
+  <link rel="icon" href="https://icons.veryicon.com/png/o/education-technology/blue-gray-solid-blend-icon/electronics-187.png" type="image/x-icon">
 </head>
-
-<body>
 <body>
   <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
-  <header>
-    <img src="https://github.com/koudsHalitim/koudshalitim/blob/showing-/88205726.jpeg" alt="Your Name" style="width: 200px; border-radius: 50%; display: block; margin: 1rem auto;" />
-    <h1>Your Name</h1>
-    <p><em>Researcher in [Your Field]</em></p>
-  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <img src="https://github.com/koudsHalitim/koudshalitim/blob/showing-/88205726.jpeg" alt="Kouds Halitim" />
+      <h1>Kouds Halitim</h1>
+      <p><em>Automation Engineer</em></p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="main">
+      <section id="about">
+        <h2>About</h2>
+        <p>I am a researcher specializing in automation engineering, with a focus on control systems, robotics, and industrial process optimization. My work blends hands-on engineering with research into efficient and scalable automation technologies.</p>
+      </section>
 
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>I am a researcher specializing in [your domain], with a focus on [topics]. My interests include [keywords]. I hold a position at [institution], where I conduct [brief summary of work].</p>
-    </section>
+      <section id="publications">
+        <h2>Publications</h2>
+        <ul class="publications">
+          <li>
+            <strong>"Efficient Control Systems for Modular Robotics"</strong><br />
+            <span>Kouds Halitim, Coauthor. <em>IEEE Robotics Journal</em>, 2024.</span><br />
+            <a href="https://example.com/paper1" target="_blank">View Publication</a>
+          </li>
+          <li>
+            <strong>"Scalable Automation in Smart Manufacturing"</strong><br />
+            <span>Kouds Halitim. <em>Automation Conference</em>, 2023.</span><br />
+            <a href="https://example.com/paper2" target="_blank">View Publication</a>
+          </li>
+        </ul>
+      </section>
 
-    <section id="publications">
-      <h2>Publications</h2>
-      <ul class="publications">
-        <li>
-          <strong>"Title of Paper One"</strong><br />
-          <span>Author1, Author2, <strong>You</strong>. <em>Journal Name</em>, 2024.</span><br />
-          <a href="https://example.com/paper1" target="_blank">View Publication</a>
-        </li>
-        <li>
-          <strong>"Title of Paper Two"</strong><br />
-          <span>You, Coauthor. <em>Conference Name</em>, 2023.</span><br />
-          <a href="https://example.com/paper2" target="_blank">View Publication</a>
-        </li>
-        <li>
-          <strong>"Title of Paper Three"</strong><br />
-          <span>Author1, You, Author3. <em>Workshop Name</em>, 2022.</span><br />
-          <a href="https://example.com/paper3" target="_blank">View Publication</a>
-        </li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-      <p>Google Scholar: <a href="https://scholar.google.com/citations?user=XXXX" target="_blank">View Profile</a></p>
-    </section>
-  </main>
-
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:kouds@email.com">kouds@email.com</a></p>
+        <p>GitHub: <a href="https://github.com/koudsHalitim" target="_blank">github.com/koudsHalitim</a></p>
+        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=XXXX" target="_blank">View Profile</a></p>
+      </section>
+    </main>
+  </div>
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 Kouds Halitim. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
