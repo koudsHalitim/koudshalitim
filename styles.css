@@ -92,10 +92,11 @@ body {
 .main {
   flex: 1;
   padding: 0.5rem 2rem;
-  margin-left: 350px;
+  margin-left: 350px; /* aligns with sidebar width */
   background-color: #fff;
   min-height: auto;
 }
+
 
 .main section {
   margin-bottom: 2.5rem;
