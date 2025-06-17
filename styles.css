@@ -1,11 +1,4 @@
 /* ===== Base Setup ===== */
-body.dark-mode .sidebar nav ul li a {
-  color: #f0f0f0;
-}
-
-body.dark-mode .sidebar nav ul li a:hover {
-  color: #ffc267;
-}
 :root {
   --bg-light: #fffef9;
   --bg-dark: #1a1a1a;
@@ -44,7 +37,7 @@ body {
 .sidebar {
   background: var(--sidebar-bg);
   width: 300px;
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   text-align: center;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
   position: fixed;
@@ -55,22 +48,22 @@ body {
 }
 
 .profile-pic {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
 .sidebar h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
 }
 
 .tagline {
   font-style: italic;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .sidebar nav ul {
@@ -78,7 +71,7 @@ body {
 }
 
 .sidebar nav ul li {
-  margin: 1rem 0;
+  margin: 0.8rem 0;
 }
 
 .sidebar nav ul li a {
@@ -95,21 +88,21 @@ body {
 /* ===== Main Content ===== */
 .main {
   flex: 1;
-  padding: 4rem 5rem;
+  padding: 2rem 3rem;
   margin-left: 300px;
   background-color: #fff;
 }
 
 .main section {
-  margin-bottom: 4rem;
-  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
 }
 
 h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.4rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.3rem;
   border-bottom: 2px solid #f0b134;
   color: #a65f00;
 }
@@ -117,7 +110,7 @@ h2 {
 ul.publications li,
 ul.contact-info li,
 #interests ul li {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -134,7 +127,7 @@ a:hover {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   background: var(--accent);
   color: white;
   border: none;
@@ -148,7 +141,7 @@ a:hover {
 /* ===== Footer ===== */
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 0.8rem;
   background-color: #fff7df;
   border-top: 1px solid #f0e4b4;
   font-size: 0.9rem;
@@ -167,6 +160,14 @@ body.dark-mode .main {
 body.dark-mode .sidebar {
   background: #222;
   color: var(--text-dark);
+}
+
+body.dark-mode .sidebar nav ul li a {
+  color: #f0f0f0;
+}
+
+body.dark-mode .sidebar nav ul li a:hover {
+  color: #ffc267;
 }
 
 body.dark-mode a {
