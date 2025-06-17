@@ -6,6 +6,9 @@
   <title>Kouds Halitim | Automation Engineer</title>
   <meta name="description" content="This is the portfolio of Kouds Halitim" />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
@@ -16,6 +19,7 @@
     .layout {
       display: flex;
       min-height: 100vh;
+      overflow-x: hidden;
     }
     .sidebar {
       background: linear-gradient(180deg, #fdd76e, #fff4c2);
@@ -27,6 +31,11 @@
       flex-direction: column;
       align-items: center;
       box-shadow: 2px 0 20px rgba(0, 0, 0, 0.05);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      overflow-y: auto;
     }
     .sidebar img {
       width: 220px;
@@ -65,8 +74,7 @@
     .main {
       flex: 1;
       padding: 4rem 5rem;
-      max-width: 900px;
-      margin: 0 auto;
+      margin-left: 320px;
       background-color: #fff;
     }
     h2 {
@@ -143,14 +151,14 @@
         <h2>Publications</h2>
         <ul class="publications">
           <li>
-            <strong>"Efficient Control Systems for Modular Robotics"</strong><br />
-            <span>Kouds Halitim, Coauthor. <em>IEEE Robotics Journal</em>, 2024.</span><br />
-            <a href="https://example.com/paper1" target="_blank">View Publication</a>
+            <strong>"Control‑Theory‑Based Energy Optimization in HPC Workloads"</strong><br />
+            <span>Kouds Halitim et al., <em>CTRL‑A Project, Inria Spirals</em>, 2024.</span><br />
+            <a href="https://hal.science/hal-XXXX" target="_blank">View on HAL</a>
           </li>
           <li>
-            <strong>"Scalable Automation in Smart Manufacturing"</strong><br />
-            <span>Kouds Halitim. <em>Automation Conference</em>, 2023.</span><br />
-            <a href="https://example.com/paper2" target="_blank">View Publication</a>
+            <strong>"Ambassadorial Report for IYMC"</strong><br />
+            <span>Kouds Halitim, <em>IYMC Youth Math Outreach</em>, 2024.</span><br />
+            <a href="https://iymc.info/ambassadors" target="_blank">IYMC Ambassador Page</a>
           </li>
         </ul>
       </section>
