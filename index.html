@@ -7,90 +7,109 @@
   <meta name="description" content="This is the portfolio of Kouds Halitim" />
   <style>
     body {
-      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fffaf3;
-      color: #333;
+      background-color: #fffef9;
+      color: #2e2e2e;
     }
     .layout {
-      display: grid;
-      grid-template-columns: 300px 1fr;
+      display: flex;
       min-height: 100vh;
     }
     .sidebar {
-      background-color: #f7d660;
-      color: #1e1e1e;
+      background: linear-gradient(180deg, #fdd76e, #fff4c2);
+      color: #1a1a1a;
+      width: 320px;
       padding: 3rem 2rem;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 2px 0 20px rgba(0, 0, 0, 0.05);
     }
     .sidebar img {
-      width: 200px;
-      border-radius: 10px;
+      width: 220px;
+      height: 220px;
+      border-radius: 20px;
       object-fit: cover;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 1.8rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     }
     .sidebar h1 {
-      font-size: 1.8rem;
-      margin: 0.5rem 0;
+      font-size: 2rem;
+      margin: 0.4rem 0;
     }
     .sidebar p {
       font-size: 1rem;
+      font-style: italic;
       margin-bottom: 2rem;
     }
     .sidebar nav ul {
       list-style: none;
       padding: 0;
+      width: 100%;
     }
     .sidebar nav ul li {
       margin: 1rem 0;
     }
     .sidebar nav ul li a {
       text-decoration: none;
-      color: #1e1e1e;
+      color: #333;
       font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .sidebar nav ul li a:hover {
+      color: #a65f00;
     }
     .main {
+      flex: 1;
       padding: 4rem 5rem;
-      max-width: 960px;
+      max-width: 900px;
       margin: 0 auto;
+      background-color: #fff;
     }
     h2 {
-      font-size: 1.5rem;
-      color: #d9853b;
-      border-bottom: 2px solid #f0c36d;
-      padding-bottom: 0.5rem;
-    }
-    ul.publications {
+      font-size: 1.6rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #a65f00;
+      border-left: 4px solid #f0b134;
       padding-left: 1rem;
     }
+    ul.publications {
+      padding-left: 1.2rem;
+    }
     ul.publications li {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       line-height: 1.6;
+    }
+    a {
+      color: #a65f00;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     .theme-toggle {
       position: fixed;
       top: 1rem;
       right: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #d9853b;
+      padding: 0.6rem 1.2rem;
+      background-color: #a65f00;
       color: white;
       border: none;
-      border-radius: 5px;
-      font-weight: bold;
+      border-radius: 6px;
+      font-weight: 600;
       cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #fff3c4;
+      background-color: #fff7df;
       font-size: 0.9rem;
-      border-top: 1px solid #e5d195;
+      border-top: 1px solid #f0e4b4;
     }
   </style>
   <script>
@@ -105,7 +124,7 @@
     <aside class="sidebar">
       <img src="88205726.jpeg" alt="Kouds Halitim" />
       <h1>Kouds Halitim</h1>
-      <p><em>Automation Engineer</em></p>
+      <p>Automation Engineer<br/>Based in Grenoble, France</p>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -117,7 +136,7 @@
     <main class="main">
       <section id="about">
         <h2>About</h2>
-        <p>I am a researcher specializing in automation engineering, with a focus on control systems, robotics, and industrial process optimization. My work blends hands-on engineering with research into efficient and scalable automation technologies.</p>
+        <p>I am a final-year automation engineering student at the National Polytechnic School of Algiers, currently living in Grenoble, France. I specialize in control systems, robotics, and industrial process optimization. As an ambassador for the International Youth Math Challenge (IYMC), I also promote mathematical innovation among youth. My recent work includes an MSc internship at INRIA on control theory applied to compute-intensive applications.</p>
       </section>
 
       <section id="publications">
