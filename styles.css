@@ -91,8 +91,8 @@ body {
 /* ===== Main Content ===== */
 .main {
   flex: 1;
-  padding: 1.5rem 2rem;
-  margin-left: 350px;
+  padding: 2.5rem 2rem;
+  margin-left: 550px;
   background-color: #fff;
   min-height: auto;
 }
