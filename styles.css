@@ -38,7 +38,7 @@ body {
 .sidebar {
   background: var(--sidebar-bg);
   width: 350px;
-  padding: 2rem 1.5rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
   position: fixed;
