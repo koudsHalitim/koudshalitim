@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 18px; /* Increased for readability */
 }
 
 body {
@@ -25,15 +26,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
+/* ===== Layout ===== */
 .layout {
   display: flex;
   flex: 1;
 }
 
-/* ===== Sidebar ===== */
 .sidebar {
   background: var(--sidebar-bg);
   width: 300px;
@@ -48,30 +49,33 @@ body {
 }
 
 .profile-pic {
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
   border-radius: 1rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
 .sidebar h1 {
-  font-size: 1.6rem;
-  margin-bottom: 0.4rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .tagline {
   font-style: italic;
   margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
 .sidebar nav ul {
   list-style: none;
+  padding: 0;
 }
 
 .sidebar nav ul li {
   margin: 0.8rem 0;
+  font-size: 1.1rem;
 }
 
 .sidebar nav ul li a {
@@ -88,9 +92,10 @@ body {
 /* ===== Main Content ===== */
 .main {
   flex: 1;
-  padding: 2rem 3rem;
+  padding: 1.5rem 2rem;
   margin-left: 300px;
   background-color: #fff;
+  min-height: auto;
 }
 
 .main section {
@@ -100,17 +105,17 @@ body {
 }
 
 h2 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
   padding-bottom: 0.3rem;
   border-bottom: 2px solid #f0b134;
   color: #a65f00;
 }
 
 ul.publications li,
-ul.contact-info li,
-#interests ul li {
+ul.contact-info li {
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 a {
