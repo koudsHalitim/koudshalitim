@@ -37,7 +37,7 @@ body {
 
 .sidebar {
   background: var(--sidebar-bg);
-  width: 350px;
+  width: 400px;
   padding: 2rem 1.5rem;
   text-align: center;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
@@ -58,7 +58,7 @@ body {
 }
 
 .sidebar h1 {
-  font-size: 2.3rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
 
