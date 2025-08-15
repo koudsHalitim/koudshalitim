@@ -1,3 +1,4 @@
+
 /* ===== Base Setup ===== */
 :root {
   --bg-light: #fffef9;
@@ -16,7 +17,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 30px;
+  font-size: 18px; /* reduced for better proportion */
 }
 
 body {
@@ -26,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  line-height: 1.9;
+  line-height: 1.8;
 }
 
 /* ===== Layout ===== */
@@ -37,7 +38,7 @@ body {
 
 .sidebar {
   background: var(--sidebar-bg);
-  width: 350px;
+  width: 320px;
   padding: 2rem 1.5rem;
   text-align: center;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
@@ -49,8 +50,8 @@ body {
 }
 
 .profile-pic {
-  width: 300px;
-  height: 300px;
+  width: 260px;
+  height: 260px;
   object-fit: cover;
   border-radius: 1rem;
   margin-bottom: 1.5rem;
@@ -58,98 +59,68 @@ body {
 }
 
 .sidebar h1 {
-  font-size: 2.3rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
-.tagline {
-  font-style: italic;
+.sidebar p {
+  font-size: 1rem;
   margin-bottom: 1.5rem;
-  font-size: 1.1rem;
 }
 
-.sidebar nav ul {
-  list-style: none;
-}
-
-.sidebar nav ul li {
-  margin: 0.8rem 0;
-  font-size: 1.25rem;
-}
-
-.sidebar nav ul li a {
-  color: #222;
-  text-decoration: none;
+.sidebar nav a {
+  display: block;
+  margin: 0.75rem 0;
+  color: var(--text-light);
   font-weight: 600;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.sidebar nav ul li a:hover {
+.sidebar nav a:hover {
   color: var(--accent);
 }
 
 /* ===== Main Content ===== */
-.main {
+main {
   flex: 1;
-  padding: 0.5rem 2rem;
-  margin-left: 350px; /* aligns with sidebar width */
-  background-color: #fff;
-  min-height: auto;
+  margin-left: 320px; /* matches sidebar width */
+  padding: 3rem 4rem;
+  max-width: 1000px;
 }
 
-
-.main section {
-  margin-bottom: 2.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+section {
+  margin-bottom: 3rem;
 }
 
 h2 {
   font-size: 1.8rem;
-  margin-bottom: 0.8rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 2px solid #f0b134;
-  color: #a65f00;
-}
-
-ul.publications li,
-ul.contact-info li {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
-}
-
-a {
   color: var(--accent);
-  text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-/* ===== Theme Toggle Button ===== */
+/* ===== Theme Toggle ===== */
 .theme-toggle {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  padding: 0.4rem 0.8rem;
+  padding: 0.5rem 1rem;
   background: var(--accent);
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 6px;
-  font-weight: bold;
+  border-radius: 5px;
   cursor: pointer;
-  z-index: 999;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  font-size: 0.9rem;
+  z-index: 1000;
 }
 
-/* ===== Footer ===== */
-footer {
-  text-align: center;
-  padding: 0.8rem;
-  background-color: #fff7df;
-  border-top: 1px solid #f0e4b4;
-  font-size: 1rem;
+.theme-toggle:hover {
+  opacity: 0.9;
 }
 
 /* ===== Dark Mode ===== */
@@ -158,28 +129,14 @@ body.dark-mode {
   color: var(--text-dark);
 }
 
-body.dark-mode .main {
-  background-color: #111;
-}
-
 body.dark-mode .sidebar {
-  background: #222;
-  color: var(--text-dark);
-}
-
-body.dark-mode .sidebar nav ul li a {
-  color: #f0f0f0;
-}
-
-body.dark-mode .sidebar nav ul li a:hover {
-  color: #ffc267;
+  background: linear-gradient(180deg, #333, #222);
 }
 
 body.dark-mode a {
-  color: #ffc267;
+  color: var(--text-dark);
 }
 
-body.dark-mode footer {
-  background-color: #111;
-  border-color: #333;
+body.dark-mode a:hover {
+  color: var(--accent);
 }
