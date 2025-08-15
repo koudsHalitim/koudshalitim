@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research Interests | Kouds Halitim</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kouds Halitim | Automation Engineer</title>
+  <meta name="description" content="This is the portfolio of Kouds Halitim" />
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </head>
-<body >
-  <button class="theme-toggle" onclick="document.body.classList.toggle('dark-mode')">🌓 Toggle Theme</button>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌓 Toggle Theme</button>
   <div class="layout">
     <aside class="sidebar">
       <img src="88205726.jpeg" alt="Kouds Halitim" class="profile-pic"  />
@@ -15,28 +24,65 @@
       <p class="tagline">Automation Engineer<br/>Grenoble, France</p>
       <nav>
         <ul>
-          <li><a href="index.html#about">👤 About</a></li>
-          <li><a href="research.html">🔬 Research Interests</a></li>
-          <li><a href="index.html#publications">📚 Publications</a></li>
-          <li><a href="index.html#contact">📬 Contact</a></li>
+  <li><a href="#about">👤 About</a></li>
+  <li><a href="research.html">🔬 Research Interests</a></li>
+  <li><a href="#publications">📚 Publications</a></li>
+  <li><a href="#contact">📬 Contact</a></li>
         </ul>
       </nav>
     </aside>
 
     <main class="main" >
-      <section>
-        <h2>🔬 Research Interests</h2>
-        <ul >
-          <li>Control theory for computing systems</li>
-          <li>Energy-aware HPC scheduling</li>
-          <li>Hybrid control and scheduling frameworks</li>
-          <li>Formal models for adaptive resource management</li>
-          <li>Feedback control in distributed infrastructures</li>
+      <section id="about">
+        <h2>👤 About</h2>
+        <p >I am a PhD candidate at <strong>Inria</strong> and <strong>Grenoble INP</strong>, focused on hybridizing task scheduling and control theory in high-performance computing systems. My thesis, titled <em>“Efficient task hybridization in heterogeneous computing: practical combinations of Control and Scheduling theories”</em>, addresses the development of adaptive, intelligent controllers for resource-constrained, compute-intensive platforms.</p>
+      </section>
+
+      <section id="publications">
+        <h2>📚 Publications</h2>
+        <ul class="publications">
+          <li>
+            <strong>"Enhancing Efficiency through Control Theory in Compute‑Intensive Applications"</strong><br />
+            <span><em>MSc Internship Report, Inria Spirals</em>, 2023</span><br />
+            <a href="https://hal.univ-lorraine.fr/CRISTAL-SPIRALS/hal-04357812v1" target="_blank">🔗 View Internship Report</a>
+          </li>
+          <li>
+            <strong>"Efficient Task Hybridization in Heterogeneous Computing"</strong><br />
+            <span><em>PULSE Project, Inria CTRL-a</em>, 2024</span><br />
+            <a href="https://radar.inria.fr/report/2024/ctrl-a" target="_blank">🔗 View Project Report</a>
+          </li>
+          <li>
+            <strong>"Coarse‑grain Congestion Regulation Using Control Theory"</strong><br />
+            <span><em>COMPAS 2025, Bordeaux</em></span><br />
+            <a href="https://hal.science/hal-05075480v1" target="_blank">🔗 View on HAL</a>
+          </li>
+          <li>
+            <strong>"Poster: Control-Scheduling for HPC"</strong><br />
+            <span><em>Inria / HAL Poster Archive</em>, 2024</span><br />
+            <a href="https://hal.science/hal-05108245v1" target="_blank">🔗 View Poster</a>
+          </li>
+          <li>
+            <strong>"Robust Cascade Control for Variable Dimension Systems: Application to Processors Powercapping"</strong><br />
+            <span><em>ECC 2025, Thessaloniki, Greece</em></span><br />
+            <a href="https://hal.science/hal-05117585v1" target="_blank">🔗 View on HAL</a>
+          </li>
+            <strong>"Stochastic Model Predictive Control with Direct Feedforward Compensation: Harvesting Idle Resources in High-Performance Computing"</strong><br />
+            <span><em>ICSTCC 2025, Cluj-Napoca, Romania</em></span><br />
+            <a href="https://hal.science/hal-05117585v1" target="_blank">🔗 View on HAL</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>📬 Contact</h2>
+        <ul class="contact-info">
+          <li>📧 <a href="mailto:kouds.halitim@inria.fr">kouds.halitim@inria.fr</a></li>
+          <li>🦊 <a href="https://gitlab.inria.fr/khalitim" target="_blank">GitLab</a></li>
+          <li>🎓 <a href="https://scholar.google.com/citations?user=SqHRM-IAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
         </ul>
       </section>
     </main>
   </div>
-
   <footer>
     <p>&copy; 2025 Kouds Halitim. Built with ❤ using HTML & CSS. All rights reserved.</p>
   </footer>
