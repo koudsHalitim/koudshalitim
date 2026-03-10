@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kouds Halitim | PhD student</title>
-  <meta name="description" content="This is the portfolio of Kouds Halitim" />
+  <title>Kouds Halitim | PhD Student</title>
+  <meta name="description" content="Portfolio of Kouds Halitim - PhD student in Control Theory and HPC" />
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script>
     function toggleTheme() {
       document.body.classList.toggle('dark-mode');
@@ -16,45 +16,50 @@
   </script>
 </head>
 <body>
-  <button class="theme-toggle" onclick="toggleTheme()">🌓 Toggle Theme</button>
+
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌓 Mode</button>
+
   <div class="layout">
     <aside class="sidebar">
-      <img src="88205726.jpeg" alt="Kouds Halitim" class="profile-pic"  />
-      <h1>Kouds Halitim</h1>
-      <p class="tagline">PhD student<br/>Grenoble, France</p>
+      <div class="sidebar-header">
+        <img src="88205726.jpeg" alt="Kouds Halitim" class="profile-pic" />
+        <h1>Kouds Halitim</h1>
+        <p class="tagline">PhD Student @ Inria & LIG<br/>Grenoble, France</p>
+      </div>
+      
       <nav>
         <ul>
-  <li><a href="#about">About</a></li>
-  <li><a href="#research">Research Interests</a></li>
-  <li><a href="#publications">Publications</a></li>
-  <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </aside>
 
-    <main class="main" >
+    <main class="main">
       <section id="about">
         <h2>About Me</h2>
-        <p >I am a PhD student at <strong>Inria</strong> and <strong>LIG</strong> laboratories. My PhD is part of the <strong>PULSE</strong> challenge between <strong>INRIA</strong>, <strong>ADEME</strong> and <strong>Qarnot computing</strong>, focused on hybridizing task scheduling and control theory in high-performance computing systems. My thesis, titled <em>“Efficient task hybridization in heterogeneous computing: practical combinations of Control and Scheduling theories”</em>, addresses the development of adaptive, robust controllers for resource-constrained, compute-intensive platforms.</p>
+        <p>I am a PhD student at <strong>Inria</strong> and <strong>LIG</strong> laboratories. My research is part of the <strong>PULSE</strong> challenge—a collaboration between Inria, ADEME, and Qarnot computing—focused on hybridizing task scheduling and control theory in high-performance computing (HPC) systems.</p>
+        <p>My thesis, <em>“Efficient task hybridization in heterogeneous computing: practical combinations of Control and Scheduling theories”</em>, addresses the development of adaptive, robust controllers for resource-constrained, compute-intensive platforms.</p>
       </section>
 
       <section id="publications">
         <h2>Publications</h2>
         <ul class="publications">
           <li>
-            <strong>"Enhancing Efficiency through Control Theory in Compute‑Intensive Applications"</strong><br />
-            <span><em>MSc Internship Report, Inria Spirals</em>, 2023</span><br />
-            <a href="https://hal.univ-lorraine.fr/CRISTAL-SPIRALS/hal-04357812v1" target="_blank">🔗 View Internship Report</a>
+            <strong>"Event-Triggered Adaptive PI Control for Mitigating Congestion in Shared Storage Systems"</strong><br />
+            <span><em>ECC 2026, Reykjavík, Iceland</em></span>
           </li>
           <li>
-            <strong>"Poster: Control-Scheduling for HPC"</strong><br />
-            <span><em>Inria / HAL Poster Archive</em>, 2024</span><br />
-            <a href="https://hal.science/hal-05108245v1" target="_blank">🔗 View Poster</a>
+            <strong>"Mitigating Shared Storage Congestion Using Control Theory"</strong><br />
+            <span><em>UCC 2025, Dec 2025, Nantes, France</em></span><br />
+            <a href="https://cnrs.hal.science/LIG/hal-05368563v1" target="_blank">🔗 View on HAL</a>
           </li>
           <li>
-            <strong>"Coarse‑grain Congestion Regulation Using Control Theory"</strong><br />
-            <span><em>COMPAS 2025, Bordeaux</em></span><br />
-            <a href="https://hal.science/hal-05075480v1" target="_blank">🔗 View on HAL</a>
+            <strong>"Stochastic Model Predictive Control with Direct Feedforward Compensation: Harvesting Idle Resources in High-Performance Computing"</strong><br />
+            <span><em>ICSTCC 2025, Cluj-Napoca, Romania</em></span><br />
+            <a href="https://hal.science/hal-05210549v1" target="_blank">🔗 View on HAL</a>
           </li>
           <li>
             <strong>"Robust Cascade Control for Variable Dimension Systems: Application to Processors Powercapping"</strong><br />
@@ -62,52 +67,43 @@
             <a href="https://hal.science/hal-05117585v1" target="_blank">🔗 View on HAL</a>
           </li>
           <li>
-            <strong>"Stochastic Model Predictive Control with Direct Feedforward Compensation: Harvesting Idle Resources in High-Performance Computing"</strong><br />
-            <span><em>ICSTCC 2025, Cluj-Napoca, Romania</em></span><br />
-            <a href="https://hal.science/hal-05210549v1" target="_blank">🔗 View on HAL</a>
+            <strong>"Coarse-grain Congestion Regulation Using Control Theory"</strong><br />
+            <span><em>COMPAS 2025, Bordeaux</em></span><br />
+            <a href="https://hal.science/hal-05075480v1" target="_blank">🔗 View on HAL</a>
           </li>
           <li>
-            <strong>"Stochastic Model Predictive Control with Direct Feedforward Compensation: Harvesting Idle Resources in High-Performance Computing"</strong><br />
-            <span><em>ICSTCC 2025, Cluj-Napoca, Romania</em></span><br />
-            <a href="https://hal.science/hal-05210549v1" target="_blank">🔗 View on HAL</a>
+            <strong>"Poster: Control-Scheduling for HPC"</strong><br />
+            <span><em>Inria / HAL Poster Archive</em>, 2024</span><br />
+            <a href="https://hal.science/hal-05108245v1" target="_blank">🔗 View Poster</a>
           </li>
           <li>
-            <strong>Mitigating Shared Storage Congestion Using Control Theory</strong><br />
-            <span><em>UCC 2025 - 18th IEEE/ACM International Conference on Utility and Cloud Computing (UCC 2025), Dec 2025, Nantes, France,</em></span><br />
-            <a href ="https://cnrs.hal.science/LIG/hal-05368563v1" target="_blank">🔗 View on HAL</a>
-          </li>
-          <li>
-            <strong>Event-Triggered Adaptive PI Control for MitigatingCongestion in Shared Storage Systems</strong><br />
-            <span><em>ECC 2026, Reykjavík, Iceland</em></span><br />
+            <strong>"Enhancing Efficiency through Control Theory in Compute-Intensive Applications"</strong><br />
+            <span><em>MSc Internship Report, Inria Spirals</em>, 2023</span><br />
+            <a href="https://hal.univ-lorraine.fr/CRISTAL-SPIRALS/hal-04357812v1" target="_blank">🔗 View Report</a>
           </li>
         </ul>
       </section>
+
       <section id="research">
         <h2>Research Interests</h2>
-        <ul class="research">
-          <li>Control theory for computing systems</li>
-          <li>Feedback control in distributed infrastructures</li>
-          <li>Thermal-aware Resource management</li>
-          <li>Hybrid control and scheduling frameworks</li>
+        <ul class="research-list">
+          <li><strong>Control Theory:</strong> Application to large-scale computing systems.</li>
+          <li><strong>Feedback Control:</strong> Regulation in distributed infrastructures.</li>
+          <li><strong>Thermal Management:</strong> Resource-efficient and thermal-aware management.</li>
+          <li><strong>Hybrid Frameworks:</strong> Combining control laws with task scheduling.</li>
         </ul>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
-        <ul class="contact-info">
-          <li>📧 <a href="mailto:kouds.halitim@inria.fr">kouds.halitim@inria.fr</a></li>
-          <li>🦊 <a href="https://gitlab.inria.fr/khalitim" target="_blank">GitLab</a></li>
-          <li>🎓 <a href="https://scholar.google.com/citations?user=SqHRM-IAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
-        </ul>
+        <div class="contact-info">
+          <p>📧 <a href="mailto:kouds.halitim@inria.fr">kouds.halitim@inria.fr</a></p>
+          <p>🦊 <a href="https://gitlab.inria.fr/khalitim" target="_blank">Inria GitLab</a></p>
+          <p>🎓 <a href="https://scholar.google.com/citations?user=SqHRM-IAAAAJ" target="_blank">Google Scholar</a></p>
+        </div>
       </section>
     </main>
   </div>
+
 </body>
 </html>
-
-
-
-
-
-
-
