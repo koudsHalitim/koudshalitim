@@ -5,8 +5,9 @@
   --text-light: #2e2e2e;
   --text-dark: #f0f0f0;
   --accent: #a65f00;
+  /* Warm gradient for sidebar */
   --sidebar-bg: linear-gradient(180deg, #fdd76e, #fff4c2);
-  --transition: all 0.3s ease;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -26,72 +27,86 @@ body {
   color: var(--text-light);
   line-height: 1.8;
   display: flex;
-  transition: var(--transition);
+  transition: background-color 0.4s ease;
 }
 
-/* ===== Sidebar & Big Picture ===== */
+/* ===== Layout ===== */
+.layout {
+  display: flex;
+  width: 100%;
+}
+
+/* ===== Improved Sidebar ===== */
 .sidebar {
   background: var(--sidebar-bg);
-  width: 400px; /* Wider sidebar for the bigger frame */
+  width: 420px; /* Wider to accommodate the larger image */
   padding: 3rem 2rem;
   text-align: center;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  box-shadow: 4px 0 15px rgba(0,0,0,0.05);
+  box-shadow: 4px 0 20px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  z-index: 10;
 }
 
 .profile-container {
-  margin-bottom: 2rem;
+  width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .profile-pic {
-  width: 280px; /* Big Picture */
-  height: 280px;
+  /* Bigger Image & No White Margin */
+  width: 340px; 
+  height: 340px;
   object-fit: cover;
-  border-radius: 2rem; /* Soft rounded square */
-  border: 10px solid #fff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: none; /* Removed the white frame */
+  padding: 0;   /* Removed any gap */
+  border-radius: 1.5rem; /* Modern soft corners */
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
   transition: var(--transition);
 }
 
 .profile-pic:hover {
   transform: scale(1.02);
-  box-shadow: 0 15px 40px rgba(166, 95, 0, 0.2);
+  box-shadow: 0 15px 50px rgba(166, 95, 0, 0.25);
 }
 
 .sidebar h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #222;
+  letter-spacing: -0.5px;
 }
 
 .tagline {
-  font-size: 1rem;
+  font-size: 1.05rem;
   margin-bottom: 2.5rem;
-  color: #555;
+  color: #554400;
+  font-weight: 500;
+  opacity: 0.8;
 }
 
-/* Navigation - Removing Bullets */
+/* Navigation - No Bullets */
 nav ul {
   list-style: none;
   padding: 0;
 }
 
 nav li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
 }
 
 nav a {
   display: block;
   padding: 0.8rem;
-  color: #333;
+  color: #332200;
   font-weight: 600;
   text-decoration: none;
   border-radius: 12px;
@@ -101,42 +116,42 @@ nav a {
 nav a:hover {
   background: rgba(255, 255, 255, 0.5);
   color: var(--accent);
-  transform: translateX(5px);
+  transform: translateX(8px);
 }
 
 /* ===== Main Content ===== */
 .main {
   flex: 1;
-  margin-left: 400px;
+  margin-left: 420px; /* Matched to sidebar width */
   padding: 5rem 10% 5rem 6%;
 }
 
 section {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   max-width: 850px;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--accent);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   border-bottom: 2px solid rgba(166, 95, 0, 0.1);
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
 
-/* Publications List */
+/* Publications List Style */
 .publications-list {
   list-style: none;
 }
 
 .publications-list li {
   margin-bottom: 1.5rem;
-  padding: 1rem;
+  padding: 1.2rem;
   background: rgba(0,0,0,0.02);
-  border-radius: 10px;
+  border-radius: 12px;
   border-left: 4px solid transparent;
   transition: var(--transition);
 }
@@ -144,6 +159,15 @@ h2 {
 .publications-list li:hover {
   border-left-color: var(--accent);
   background: rgba(0,0,0,0.04);
+  transform: translateX(5px);
+}
+
+.publications-list strong {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--text-light);
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
 }
 
 .publications-list a {
@@ -151,9 +175,11 @@ h2 {
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 0.5rem;
 }
 
-/* Research Chips */
+/* Research Interests (Chips/Tags) */
 .research-container {
   display: flex;
   flex-wrap: wrap;
@@ -163,30 +189,41 @@ h2 {
 .research-chip {
   background: rgba(166, 95, 0, 0.08);
   color: var(--accent);
-  padding: 10px 18px;
+  padding: 10px 20px;
   border-radius: 50px;
   font-size: 0.9rem;
   font-weight: 600;
   border: 1px solid rgba(166, 95, 0, 0.15);
+  transition: var(--transition);
 }
 
-/* Contact (As requested: Original List Style) */
+.research-chip:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Contact Info (Clean List Style) */
 .contact-info {
   list-style: none;
 }
 
 .contact-info li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .contact-info a {
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
+  transition: var(--transition);
 }
 
 .contact-info a:hover {
+  color: var(--text-light);
   text-decoration: underline;
 }
 
@@ -195,7 +232,7 @@ h2 {
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
-  padding: 0.6rem 1.2rem;
+  padding: 0.7rem 1.4rem;
   background: var(--accent);
   color: #fff;
   border: none;
@@ -203,16 +240,23 @@ h2 {
   cursor: pointer;
   z-index: 1000;
   font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: var(--transition);
 }
 
-/* ===== Dark Mode ===== */
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* ===== Dark Mode Overrides ===== */
 body.dark-mode {
   background-color: var(--bg-dark);
   color: var(--text-dark);
 }
 
 body.dark-mode .sidebar {
-  background: #1a1a1a;
+  background: #181818;
   border-right: 1px solid #333;
 }
 
@@ -223,13 +267,23 @@ body.dark-mode .tagline {
 }
 
 body.dark-mode .publications-list li {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.04);
 }
 
-/* Responsive */
-@media (max-width: 1100px) {
+body.dark-mode .publications-list strong {
+  color: var(--text-dark);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 1150px) {
   .layout { flex-direction: column; }
-  .sidebar { position: relative; width: 100%; height: auto; border-right: none; }
+  .sidebar { 
+    position: relative; 
+    width: 100%; 
+    height: auto; 
+    border-right: none; 
+    padding: 3rem 1.5rem;
+  }
   .main { margin-left: 0; padding: 3rem 2rem; }
-  .profile-pic { width: 220px; height: 220px; }
+  .profile-pic { width: 260px; height: 260px; }
 }
