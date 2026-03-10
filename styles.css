@@ -39,7 +39,7 @@ body {
 /* ===== Improved Sidebar ===== */
 .sidebar {
   background: var(--sidebar-bg);
-  width: 420px; /* Wider to accommodate the larger image */
+  width: 400px; /* Wider to accommodate the larger image */
   padding: 3rem 2rem;
   text-align: center;
   position: fixed;
@@ -62,8 +62,8 @@ body {
 
 .profile-pic {
   /* Bigger Image & No White Margin */
-  width: 380px; 
-  height: 380px;
+  width: 340px; 
+  height: 340px;
   object-fit: cover;
   border: none; /* Removed the white frame */
   padding: 0;   /* Removed any gap */
