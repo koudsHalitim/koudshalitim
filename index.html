@@ -21,20 +21,20 @@
 
   <div class="layout">
     <aside class="sidebar">
-      <div class="sidebar-header">
+      <div class="sidebar-content">
         <img src="88205726.jpeg" alt="Kouds Halitim" class="profile-pic" />
         <h1>Kouds Halitim</h1>
-        <p class="tagline">PhD Student @ Inria & LIG<br/>Grenoble, France</p>
+        <p class="tagline">PhD Student @ <strong>Inria & LIG</strong><br/>Control & Scheduling Theory</p>
+        
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
     </aside>
 
     <main class="main">
@@ -46,7 +46,7 @@
 
       <section id="publications">
         <h2>Publications</h2>
-        <ul class="publications">
+        <ul class="publications-list">
           <li>
             <strong>"Event-Triggered Adaptive PI Control for Mitigating Congestion in Shared Storage Systems"</strong><br />
             <span><em>ECC 2026, Reykjavík, Iceland</em></span>
@@ -76,30 +76,28 @@
             <span><em>Inria / HAL Poster Archive</em>, 2024</span><br />
             <a href="https://hal.science/hal-05108245v1" target="_blank">🔗 View Poster</a>
           </li>
-          <li>
-            <strong>"Enhancing Efficiency through Control Theory in Compute-Intensive Applications"</strong><br />
-            <span><em>MSc Internship Report, Inria Spirals</em>, 2023</span><br />
-            <a href="https://hal.univ-lorraine.fr/CRISTAL-SPIRALS/hal-04357812v1" target="_blank">🔗 View Report</a>
-          </li>
         </ul>
       </section>
 
       <section id="research">
         <h2>Research Interests</h2>
-        <ul class="research-list">
-          <li><strong>Control Theory:</strong> Application to large-scale computing systems.</li>
-          <li><strong>Feedback Control:</strong> Regulation in distributed infrastructures.</li>
-          <li><strong>Thermal Management:</strong> Resource-efficient and thermal-aware management.</li>
-          <li><strong>Hybrid Frameworks:</strong> Combining control laws with task scheduling.</li>
-        </ul>
+        <div class="research-container">
+          <span class="research-chip">Control Theory</span>
+          <span class="research-chip">Distributed Infrastructures</span>
+          <span class="research-chip">HPC Scheduling</span>
+          <span class="research-chip">Thermal-Aware Management</span>
+          <span class="research-chip">Feedback Control</span>
+          <span class="research-chip">Resource Optimization</span>
+          <span class="research-chip">Hybrid Systems</span>
+        </div>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
-        <div class="contact-info">
-          <p>📧 <a href="mailto:kouds.halitim@inria.fr">kouds.halitim@inria.fr</a></p>
-          <p>🦊 <a href="https://gitlab.inria.fr/khalitim" target="_blank">Inria GitLab</a></p>
-          <p>🎓 <a href="https://scholar.google.com/citations?user=SqHRM-IAAAAJ" target="_blank">Google Scholar</a></p>
+        <div class="contact-grid">
+          <a href="mailto:kouds.halitim@inria.fr" class="contact-card">📧 Email</a>
+          <a href="https://gitlab.inria.fr/khalitim" target="_blank" class="contact-card">🦊 GitLab</a>
+          <a href="https://scholar.google.com/citations?user=SqHRM-IAAAAJ" target="_blank" class="contact-card">🎓 Scholar</a>
         </div>
       </section>
     </main>
