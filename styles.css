@@ -39,7 +39,7 @@ body {
 /* ===== Improved Sidebar ===== */
 .sidebar {
   background: var(--sidebar-bg);
-  width: 420px; /* Wider to accommodate the larger image */
+  width: 410px; /* Wider to accommodate the larger image */
   padding: 3rem 2rem;
   text-align: center;
   position: fixed;
