@@ -62,8 +62,8 @@ body {
 
 .profile-pic {
   /* Bigger Image & No White Margin */
-  width: 400px; 
-  height: 400px;
+  width: 380px; 
+  height: 380px;
   object-fit: cover;
   border: none; /* Removed the white frame */
   padding: 0;   /* Removed any gap */
