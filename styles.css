@@ -156,12 +156,6 @@ h2 {
   transition: var(--transition);
 }
 
-.publications-list li:hover {
-  border-left-color: var(--accent);
-  background: rgba(0,0,0,0.04);
-  transform: translateX(5px);
-}
-
 .publications-list strong {
   display: block;
   font-size: 1.05rem;
