@@ -39,7 +39,7 @@ body {
 /* ===== Improved Sidebar ===== */
 .sidebar {
   background: var(--sidebar-bg);
-  width: 400px; /* Wider to accommodate the larger image */
+  width: 400px; 
   padding: 3rem 2rem;
   text-align: center;
   position: fixed;
@@ -61,13 +61,12 @@ body {
 }
 
 .profile-pic {
-  /* Bigger Image & No White Margin */
   width: 340px; 
   height: 340px;
   object-fit: cover;
-  border: none; /* Removed the white frame */
-  padding: 0;   /* Removed any gap */
-  border-radius: 1.5rem; /* Modern soft corners */
+  border: none; 
+  padding: 0;  
+  border-radius: 1.5rem; 
   box-shadow: 0 12px 40px rgba(0,0,0,0.15);
   transition: var(--transition);
 }
@@ -122,7 +121,7 @@ nav a:hover {
 /* ===== Main Content ===== */
 .main {
   flex: 1;
-  margin-left: 420px; /* Matched to sidebar width */
+  margin-left: 420px; 
   padding: 5rem 10% 5rem 6%;
 }
 
@@ -142,7 +141,7 @@ h2 {
   padding-bottom: 6px;
 }
 
-/* Publications List Style */
+/* Publications List Style - BORDER AND HOVER REMOVED */
 .publications-list {
   list-style: none;
 }
@@ -152,8 +151,7 @@ h2 {
   padding: 1.2rem;
   background: rgba(0,0,0,0.02);
   border-radius: 12px;
-  border-left: 4px solid transparent;
-  transition: var(--transition);
+  /* Removed border-left and transition to keep it static */
 }
 
 .publications-list strong {
