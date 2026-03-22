@@ -1,11 +1,9 @@
-/* ===== Base Setup ===== */
 :root {
   --bg-light: #fffef9;
   --bg-dark: #121212;
   --text-light: #2e2e2e;
   --text-dark: #f0f0f0;
   --accent: #a65f00;
-  /* Warm gradient for sidebar */
   --sidebar-bg: linear-gradient(180deg, #fdd76e, #fff4c2);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -30,13 +28,11 @@ body {
   transition: background-color 0.4s ease;
 }
 
-/* ===== Layout ===== */
 .layout {
   display: flex;
   width: 100%;
 }
 
-/* ===== Improved Sidebar ===== */
 .sidebar {
   background: var(--sidebar-bg);
   width: 400px; 
@@ -87,7 +83,6 @@ body {
   opacity: 0.8;
 }
 
-/* Navigation - No Bullets */
 nav ul {
   list-style: none;
   padding: 0;
@@ -111,7 +106,6 @@ nav a:hover {
   color: var(--accent);
 }
 
-/* ===== Main Content ===== */
 .main {
   flex: 1;
   margin-left: 420px; 
@@ -134,7 +128,6 @@ h2 {
   padding-bottom: 6px;
 }
 
-/* Publications List Style - BORDER AND HOVER REMOVED */
 .publications-list {
   list-style: none;
 }
@@ -144,7 +137,6 @@ h2 {
   padding: 1.2rem;
   background: rgba(0,0,0,0.02);
   border-radius: 12px;
-  /* Removed border-left and transition to keep it static */
 }
 
 .publications-list strong {
@@ -164,7 +156,6 @@ h2 {
   margin-top: 0.5rem;
 }
 
-/* Research Interests (Chips/Tags) */
 .research-container {
   display: flex;
   flex-wrap: wrap;
@@ -182,7 +173,6 @@ h2 {
   transition: var(--transition);
 }
 
-/* Contact Info (Clean List Style) */
 .contact-info {
   list-style: none;
 }
@@ -202,7 +192,6 @@ h2 {
   transition: var(--transition);
 }
 
-/* ===== Theme Toggle ===== */
 .theme-toggle {
   position: fixed;
   top: 1.5rem;
@@ -221,7 +210,6 @@ h2 {
 .theme-toggle:hover {
 filter: brightness(1.1);
 }
-/* ===== Dark Mode Overrides ===== */
 body.dark-mode {
   background-color: var(--bg-dark);
   color: var(--text-dark);
@@ -246,7 +234,6 @@ body.dark-mode .publications-list strong {
   color: var(--text-dark);
 }
 
-/* ===== Responsive Design ===== */
 @media (max-width: 1150px) {
   .layout { flex-direction: column; }
   .sidebar { 
