@@ -214,7 +214,9 @@ h2 {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: var(--transition);
 }
-
+.theme-toggle:hover {
+filter: brightness(1.1);
+}
 /* ===== Dark Mode Overrides ===== */
 body.dark-mode {
   background-color: var(--bg-dark);
