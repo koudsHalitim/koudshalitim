@@ -383,7 +383,16 @@ body.dark-mode .blog-content h3 {
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
+.blog-video {
+  margin: 2.5rem 0;
+}
 
+.blog-video video {
+  width: 100%;
+  max-width: 850px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
 
 body.dark-mode .blog-post-full h4 {
   color: var(--text-dark);
