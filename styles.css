@@ -290,6 +290,8 @@ body.dark-mode .blog-content h3 {
 
 .photo-card img {
   width: 100%;
+  height: 350px;
+  object-fit: cover;
   border-radius: 12px;
 }
 
