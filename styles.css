@@ -389,7 +389,7 @@ body.dark-mode .blog-content h3 {
 
 .blog-video video {
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
