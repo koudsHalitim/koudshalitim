@@ -242,7 +242,7 @@ body.dark-mode .publications-list strong {
 }
 
 .blog-image{
-  flex: 0 0 100px;
+  flex: 0 0 50px;
 }
 
 .blog-image img {
