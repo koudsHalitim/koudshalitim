@@ -406,6 +406,26 @@ body.dark-mode .blog-post-full h3,
 body.dark-mode .blog-post-full h5 {
   color: var(--accent);
 }
+.currently-reading {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.currently-reading em {
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 600;
+}
+.currently-reading a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.currently-reading a:hover {
+  text-decoration: underline;
+}
 
 @media (max-width: 1150px) {
   .layout { flex-direction: column; }
